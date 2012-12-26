@@ -39,10 +39,8 @@
 ;; Are we on a mac?
 (setq is-mac (equal system-type 'darwin))
 
-;; Setup elnode before packages to stop it from starting a server
-(require 'setup-elnode)
-
 ;; Setup packages
+;; Repistories and definition in setup-package.el
 (require 'setup-package)
 
 ;; Install extensions if they're missing
@@ -54,7 +52,6 @@
    (cons 'gist melpa)
    (cons 'htmlize melpa)
    (cons 'elisp-slime-nav melpa)
-   (cons 'elnode marmalade)
    (cons 'slime-js marmalade)
    (cons 'git-commit-mode melpa)
    (cons 'gitconfig-mode melpa)
