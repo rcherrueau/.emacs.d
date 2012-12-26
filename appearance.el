@@ -24,8 +24,5 @@
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
 
-;; Show column number in the mode line
-(setq column-number-mode t)
-
 ;; end of apparance.el
 (provide 'appearance)
