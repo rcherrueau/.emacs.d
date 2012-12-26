@@ -25,8 +25,8 @@
     (add-to-list 'load-path project)))
 
 ;; Keep emacs Custom-settings in separate file
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-(load custom-file)
+; (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+; (load custom-file)
 
 ;; Write backup files to own directory
 (setq backup-directory-alist
@@ -75,7 +75,10 @@
    (cons 'gitconfig-mode melpa)
    ;; https://github.com/lunaryorn/git-modes
    ;; Mode for editing gitignore file
-   (cons 'gitignore-mode melpa)))
+   (cons 'gitignore-mode melpa)
+   ;; https://github.com/bbatsov/solarized-emacs
+   ;; Solarized theme for emacs
+   (cons 'solarized-theme melpa)))
 
 (condition-case nil
     (init--install-packages)
