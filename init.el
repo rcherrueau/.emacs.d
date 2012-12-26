@@ -53,16 +53,29 @@
    ;; http://philjackson.github.com/magit/
    ;; An emacs mode for git.
    (cons 'magit melpa)
+   ;; https://github.com/defunkt/gist.el
+   ;; Yet another Emacs paste mode, this one for Gist. Contribute to
+   ;; gist.el development by creating an account on GitHub.
+   ;; Gist is a simple way to share snippets and pastes with others
    (cons 'gist melpa)
+   ;; http://emacswiki.org/emacs/Htmlize
+   ;; Generate HTML output of emacs buffer
    (cons 'htmlize melpa)
+   ;;
    (cons 'elisp-slime-nav melpa)
+   ;;
    (cons 'slime-js marmalade)
+   ;; https://github.com/lunaryorn/git-modes
+   ;; Mode for git commit messages, helps format the commit messages
+   ;; according to convention:
+   ;; http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
    (cons 'git-commit-mode melpa)
+   ;; https://github.com/lunaryorn/git-modes
+   ;; Mode for editing gitconfig file
    (cons 'gitconfig-mode melpa)
-   (cons 'gitignore-mode melpa)
-   (cons 'clojure-mode melpa)
-   (cons 'clojure-test-mode melpa)
-   (cons 'nrepl melpa)))
+   ;; https://github.com/lunaryorn/git-modes
+   ;; Mode for editing gitignore file
+   (cons 'gitignore-mode melpa)))
 
 (condition-case nil
     (init--install-packages)
@@ -92,7 +105,6 @@
 ;; Language specific setup files
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
 (eval-after-load 'ruby-mode '(require 'setup-ruby-mode))
-(eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 
 ;; Load slime-js when asked for
