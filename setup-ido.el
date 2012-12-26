@@ -1,4 +1,6 @@
 ;; Interactively Do Things
+;; http://emacswiki.org/emacs/InteractivelyDoThings
+;; Interactive list in mode line durring file and buffer search
 
 (require 'ido)
 (ido-mode t)
@@ -26,6 +28,7 @@
 (add-to-list 'ido-ignore-directories "node_modules")
 
 ;; Use ido everywhere
+;; https://github.com/DarwinAwardWinner/ido-ubiquitous
 (require 'ido-ubiquitous)
 (ido-ubiquitous-mode 1)
 
