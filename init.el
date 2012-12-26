@@ -46,9 +46,13 @@
 ;; Install extensions if they're missing
 (defun init--install-packages ()
   (packages-install
+   ;; https://github.com/purcell/exec-path-from-shell
+   ;; A GNU Emacs library to setup environment variables from the user's shell
+   ;; Avoid OS X problem with environment varaiables
    (cons 'exec-path-from-shell melpa)
+   ;; http://philjackson.github.com/magit/
+   ;; An emacs mode for git.
    (cons 'magit melpa)
-   (cons 'paredit melpa)
    (cons 'gist melpa)
    (cons 'htmlize melpa)
    (cons 'elisp-slime-nav melpa)
@@ -84,7 +88,6 @@
 (require 'setup-perspective)
 (require 'setup-ffip)
 (require 'setup-html-mode)
-(require 'setup-paredit)
 
 ;; Language specific setup files
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
