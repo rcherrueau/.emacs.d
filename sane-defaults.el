@@ -42,7 +42,7 @@
 ;; Remove text in active region if inserting text
 (delete-selection-mode 1)
 
-;; Always display line and column numbers
+;; Always display line and column numbers in mode line
 (setq line-number-mode t)
 (setq column-number-mode t)
 
@@ -51,7 +51,7 @@
 
 ;; Save a list of recent files visited. (open recent file with C-x f)
 (recentf-mode 1)
-(setq recentf-max-saved-items 100) ;; just 20 is too recent
+(setq recentf-max-saved-items 100) ;; just 20 is too crecent
 
 ;; Undo/redo window configuration with C-c <left>/<right>
 (winner-mode 1)
@@ -62,11 +62,8 @@
 ;; Show me empty lines after buffer end
 (set-default 'indicate-empty-lines t)
 
-;; Easily navigate sillycased words
+;; Easily navigate sillycased words (for camelCaseWord)
 (global-subword-mode 1)
-
-;; Don't break lines for me, please
-(setq-default truncate-lines t)
 
 ;; Keep cursor away from edges when scrolling up/down
 (require 'smooth-scrolling)
