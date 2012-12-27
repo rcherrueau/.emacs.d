@@ -1,4 +1,7 @@
-;; Load Perspective
+;; Perspective
+;; Provides multiple workspace that makes it easy to work on many
+;; separate projects without getting lost in all the buffers.
+;; https://github.com/nex3/perspective-el
 (require 'perspective)
 
 ;; Enable perspective mode

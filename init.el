@@ -74,6 +74,10 @@
    ;; https://github.com/lunaryorn/git-modes
    ;; Mode for editing gitignore file
    (cons 'gitignore-mode melpa)
+   ;; https://github.com/nex3/perspective-el
+   ;; Provides multiple workspace that makes it easy to work on many
+   ;; separate projects without getting lost in all the buffers.
+   (cons 'perspective marmalade)
    ;; https://github.com/bbatsov/solarized-emacs
    ;; Solarized theme for emacs
    (cons 'solarized-theme melpa)))
