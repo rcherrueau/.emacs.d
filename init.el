@@ -98,7 +98,6 @@
 (eval-after-load 'grep '(require 'setup-rgrep))
 (eval-after-load 'shell '(require 'setup-shell))
 (require 'setup-hippie)
-(require 'setup-yasnippet)
 (require 'setup-perspective)
 (require 'setup-ffip)
 (require 'setup-html-mode)
@@ -172,7 +171,7 @@
 
 ;; Diminish modeline clutter
 (require 'diminish)
-(diminish 'yas/minor-mode)
+;(diminish 'yas/minor-mode)
 
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
