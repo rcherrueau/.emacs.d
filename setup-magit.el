@@ -1,20 +1,15 @@
+;; Inspect and modify your Git repositories with Emacs
+;; http://philjackson.github.com/magit/
+(require 'magit)
 (require 'magit-svn)
-
-;; Subtler highlight
-(set-face-background 'magit-item-highlight "#121212")
-(set-face-foreground 'diff-context "#666666")
-(set-face-foreground 'diff-added "#00cc33")
-(set-face-foreground 'diff-removed "#ff0000")
 
 ;; Load git configurations
 ;; For instance, to run magit-svn-mode in a project, do:
 ;;
 ;;     git config --add magit.extension svn
-;;
 (add-hook 'magit-mode-hook 'magit-load-config-extensions)
 
 ;; C-x C-k to kill file on line
-
 (defun magit-kill-file-on-line ()
   "Show file on current magit line and prompt for deletion."
   (interactive)
@@ -24,8 +19,8 @@
 
 (define-key magit-status-mode-map (kbd "C-x C-k") 'magit-kill-file-on-line)
 
-;; full screen magit-status
-
+;; Full screen magit-status
+;; q to comme back to previous window configuration
 (defadvice magit-status (around magit-fullscreen activate)
   (window-configuration-to-register :magit-fullscreen)
   ad-do-it
@@ -39,8 +34,8 @@
 
 (define-key magit-status-mode-map (kbd "q") 'magit-quit-session)
 
-;; full screen vc-annotate
-
+;; Full screen vc-annotate
+;; q to comme back to previous window configuration
 (defun vc-annotate-quit ()
   "Restores the previous window configuration and kills the vc-annotate buffer"
   (interactive)
@@ -56,8 +51,7 @@
 
      (define-key vc-annotate-mode-map (kbd "q") 'vc-annotate-quit)))
 
-;; ignore whitespace
-
+;; Ignore whitespace
 (defun magit-toggle-whitespace ()
   (interactive)
   (if (member "-w" magit-diff-options)
