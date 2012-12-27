@@ -93,7 +93,9 @@
 (when is-mac (exec-path-from-shell-initialize))
 
 ;; Setup extensions
+;; Interactively Do Things
 (eval-after-load 'ido '(require 'setup-ido))
+;;
 (eval-after-load 'org '(require 'setup-org))
 (eval-after-load 'dired '(require 'setup-dired))
 (eval-after-load 'magit '(require 'setup-magit))

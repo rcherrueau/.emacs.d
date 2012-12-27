@@ -10,4 +10,22 @@
 (defadvice kill-whole-line (after fix-cookies activate)
   (myorg-update-parent-cookie))
 
+;; Flyspell
+(add-hook 'org-mode-hook 'flyspell-mode)
+
+;; Auto-fill 70
+(add-hook 'org-mode-hook 'auto-fill-mode)
+(setq-default fill-column 70)
+
+;; Todo Keywords
+(setq org-todo-keywords
+  '(
+    (sequence "TODO" "FEEDBACK" "|" "DELEGATED" "DONE" "INVALID" "FIXED")
+    ))
+
+;; Todo Special Colors
+;; http://orgmode.org/manual/Faces-for-TODO-keywords.html
+(setq org-todo-keyword-faces
+  '(("FEEDBACK" . "yellow")))
+
 (provide 'setup-org)
