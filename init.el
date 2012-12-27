@@ -95,8 +95,9 @@
 ;; Setup extensions
 ;; Interactively Do Things
 (eval-after-load 'ido '(require 'setup-ido))
-;;
+;; Org mode
 (eval-after-load 'org '(require 'setup-org))
+;; Dired, the directory editor
 (eval-after-load 'dired '(require 'setup-dired))
 (eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'grep '(require 'setup-rgrep))

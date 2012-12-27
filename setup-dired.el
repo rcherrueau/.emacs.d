@@ -1,3 +1,6 @@
+;; Dired, the Directory Editor
+;; Dired makes an Emacs buffer containing a listing of a directory
+;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html
 (require 'dired)
 (require 'dash)
 
