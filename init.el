@@ -24,10 +24,6 @@
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
 
-;; Keep emacs Custom-settings in separate file
-; (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-; (load custom-file)
-
 ;; Write backup files to own directory
 (setq backup-directory-alist
       `(("." . ,(expand-file-name
@@ -37,6 +33,8 @@
 (setq vc-make-backup-files t)
 
 ;; Are we on a mac?
+;; Note: Emacs runs .bashrc in *shell*
+;; So mac users should ln -s .profile .bashrc
 (setq is-mac (equal system-type 'darwin))
 
 ;; Setup packages
