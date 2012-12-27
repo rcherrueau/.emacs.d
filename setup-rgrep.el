@@ -1,5 +1,10 @@
+;; Searching with Grep under Emacs
+;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Grep-Searching.html
 (require 's)
 
+;; Run grep via find, and collect output in the fullscreen *grep*
+;; buffer.
+;; q to comme back to previous window configuration.
 (defun rgrep-fullscreen (regexp &optional files dir confirm)
   "Open grep in full screen, saving windows."
   (interactive
@@ -35,6 +40,8 @@
   (delete-other-windows)
   (message "Type C-x r j $ to return to pre-rgrep windows."))
 
+;; On git, print lines matching a pattern
+;; http://git-scm.com/docs/git-grep
 (defvar git-grep-switches "--extended-regexp -I -n"
   "Switches to pass to `git grep'.")
 
