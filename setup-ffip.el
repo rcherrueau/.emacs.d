@@ -1,3 +1,7 @@
+;; Find File In Project
+;; Quickly finding any file in a given project.
+;; https://github.com/technomancy/find-file-in-project
+;; http://emacswiki.org/emacs/FindFileInProject
 (require 'find-file-in-project)
 
 ;; Use eproject to find project root

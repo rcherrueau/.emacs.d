@@ -78,6 +78,9 @@
    ;; Provides multiple workspace that makes it easy to work on many
    ;; separate projects without getting lost in all the buffers.
    (cons 'perspective marmalade)
+   ;; https://github.com/technomancy/find-file-in-project
+   ;; Quickly find any file in a given project.
+   (cons 'find-file-in-project marmalade)
    ;; https://github.com/bbatsov/solarized-emacs
    ;; Solarized theme for emacs
    (cons 'solarized-theme melpa)))
