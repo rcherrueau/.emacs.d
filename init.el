@@ -110,7 +110,6 @@
 (require 'setup-html-mode)
 
 ;; Language specific setup files
-(eval-after-load 'js2-mode '(require 'setup-js2-mode))
 (eval-after-load 'ruby-mode '(require 'setup-ruby-mode))
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 
@@ -162,7 +161,7 @@
 ;; Elisp go-to-definition with M-. and back again with M-,
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav")
 (add-hook 'emacs-lisp-mode-hook (lambda () (elisp-slime-nav-mode t)))
-(eval-after-load 'elisp-slime-nav '(diminish 'elisp-slime-nav-mode))
+; (eval-after-load 'elisp-slime-nav '(diminish 'elisp-slime-nav-mode))
 
 ;; Email, baby
 (require 'setup-mu4e)
@@ -177,9 +176,21 @@
 (put 'narrow-to-region 'disabled nil)
 
 ;; Diminish modeline clutter
-(require 'diminish)
-;(diminish 'yas/minor-mode)
+; (require 'diminish)
+; (diminish 'yas/minor-mode)
 
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
