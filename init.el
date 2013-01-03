@@ -110,7 +110,6 @@
 (require 'setup-html-mode)
 
 ;; Language specific setup files
-(eval-after-load 'ruby-mode '(require 'setup-ruby-mode))
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 
 ;; Load slime-js when asked for
