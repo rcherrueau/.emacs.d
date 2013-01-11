@@ -176,8 +176,19 @@
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
+;; Malabar-mode
+;; Or enable more if you wish
+; (setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
+;                                   global-semanticdb-minor-mode
+;                                   global-semantic-idle-summary-mode
+;                                   global-semantic-mru-bookmark-mode))
+; (semantic-mode 1)
+; (require 'malabar-mode)
+; (setq malabar-groovy-lib-dir "/path/to/malabar/lib")
+; (add-to-list 'auto-mode-alist '("\\.java\\'" . malabar-mode))
+
 ;; Diminish modeline clutter
-(require 'diminish)
+;(require 'diminish)
 ;(diminish 'yas/minor-mode)
 
 ;; Conclude init by setting up specifics for the current user
