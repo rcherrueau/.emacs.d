@@ -110,9 +110,8 @@
 (require 'setup-html-mode)
 
 ;; Language specific setup files
-(eval-after-load 'js2-mode '(require 'setup-js2-mode))
-(eval-after-load 'ruby-mode '(require 'setup-ruby-mode))
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
+(require 'setup-malabar)
 
 ;; Load slime-js when asked for
 (autoload 'slime-js-jack-in-browser "setup-slime-js" nil t)
@@ -162,7 +161,7 @@
 ;; Elisp go-to-definition with M-. and back again with M-,
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav")
 (add-hook 'emacs-lisp-mode-hook (lambda () (elisp-slime-nav-mode t)))
-(eval-after-load 'elisp-slime-nav '(diminish 'elisp-slime-nav-mode))
+; (eval-after-load 'elisp-slime-nav '(diminish 'elisp-slime-nav-mode))
 
 ;; Email, baby
 (require 'setup-mu4e)
@@ -176,21 +175,3 @@
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
-;; Malabar-mode
-;; Or enable more if you wish
-; (setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
-;                                   global-semanticdb-minor-mode
-;                                   global-semantic-idle-summary-mode
-;                                   global-semantic-mru-bookmark-mode))
-; (semantic-mode 1)
-; (require 'malabar-mode)
-; (setq malabar-groovy-lib-dir "/path/to/malabar/lib")
-; (add-to-list 'auto-mode-alist '("\\.java\\'" . malabar-mode))
-
-;; Diminish modeline clutter
-;(require 'diminish)
-;(diminish 'yas/minor-mode)
-
-;; Conclude init by setting up specifics for the current user
-(when (file-exists-p user-settings-dir)
-  (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
