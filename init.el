@@ -83,7 +83,13 @@
    (cons 'find-file-in-project marmalade)
    ;; https://github.com/bbatsov/solarized-emacs
    ;; Solarized theme for emacs
-   (cons 'solarized-theme melpa)))
+   (cons 'solarized-theme melpa)
+   ;; https://github.com/jorgenschaefer/circe Circe is a Client for
+   ;; IRC in Emacs. It integrates well with the rest of the editor,
+   ;; using standard Emacs key bindings and indicating activity in
+   ;; channels in the status bar so it stays out of your way unless
+   ;; you want to use it.
+   (cons 'circe marmalade)))
 
 (condition-case nil
     (init--install-packages)
@@ -173,4 +179,3 @@
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
-
