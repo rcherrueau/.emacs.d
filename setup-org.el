@@ -20,12 +20,12 @@
 ;; Todo Keywords
 (setq org-todo-keywords
   '(
-    (sequence "TODO" "FEEDBACK" "|" "DELEGATED" "DONE" "INVALID" "FIXED")
+    (sequence "TODO" "FEEDBACK" "|" "DONE" "DELEGATED" "INVALID" "FIXED")
     ))
 
 ;; Todo Special Colors
 ;; http://orgmode.org/manual/Faces-for-TODO-keywords.html
 (setq org-todo-keyword-faces
-  '(("FEEDBACK" . "yellow")))
+  '(("FEEDBACK" . "orange")))
 
 (provide 'setup-org)
