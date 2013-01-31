@@ -16,11 +16,13 @@
 (setq tracking-ignored-buffers '("localhost:6667"))
 
 ;; Identifies yourself on bitlbee.
-(setq circe-network-options
-      `(("Bitlbee"
-         :nick ,bitlbee-nick
-         :nickserv-password ,bitlbee-password
-         )))
+;; Identificaion is done only if bitlbee-nick and bitlbee-password are
+;; defined in private feature
+(when (featurep 'private) 
+  (setq circe-network-options
+        `(("Bitlbee"
+           :nick ,bitlbee-nick
+           :nickserv-password ,bitlbee-password))))
 
 ;; Launch bitlbee
 (defun bitlbee ()
