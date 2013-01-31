@@ -97,6 +97,13 @@
    (package-refresh-contents)
    (init--install-packages)))
 
+;; Load all .el files in private dir
+(setq defuns-dir (expand-file-name "private" user-emacs-directory))
+(dolist (file (directory-files defuns-dir t ".+\\.el$"))
+  (when (file-regular-p file)
+    (load file)))
+(when (featurep 'private) (require 'private))
+
 ;; Lets start with a smattering of sanity
 (require 'sane-defaults)
 
@@ -114,6 +121,7 @@
 (require 'setup-perspective)
 (require 'setup-ffip)
 (require 'setup-html-mode)
+(require 'setup-circe)
 
 ;; Language specific setup files
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
