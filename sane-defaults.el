@@ -76,10 +76,13 @@
 (setq org-src-fontify-natively t)
 
 ;; Represent undo-history as an actual tree (visualize with C-x u)
-;;
+;; Undo and Redo with C-- and M--
+;; TODO Move key binding of undo/redo to key-binding file.
 (setq undo-tree-mode-lighter "")
 (require 'undo-tree)
 (global-undo-tree-mode)
+(global-set-key (kbd "C--") 'undo-tree-undo)
+(global-set-key (kbd "M--") 'undo-tree-redo)
 
 ;; Sentences do not need double spaces to end. Period.
 (set-default 'sentence-end-double-space nil)
