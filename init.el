@@ -128,7 +128,6 @@
 (require 'expand-region)
 (require 'mark-more-like-this)
 (require 'inline-string-rectangle)
-(require 'multiple-cursors)
 (require 'delsel)
 (require 'jump-char)
 (require 'eproject)
@@ -173,4 +172,3 @@
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
-
