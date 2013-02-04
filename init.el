@@ -56,6 +56,9 @@
    ;; gist.el development by creating an account on GitHub.
    ;; Gist is a simple way to share snippets and pastes with others
    (cons 'gist melpa)
+   ;; http://www.emacswiki.org/emacs/UndoTree
+   ;; More advanced yet simpler undo system inspired by Vim
+   (cons 'undo-tree melpa)
    ;; http://emacswiki.org/emacs/Htmlize
    ;; Generate HTML output of emacs buffer
    (cons 'htmlize melpa)
