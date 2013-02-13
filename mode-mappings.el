@@ -81,12 +81,6 @@
 ;(setq buster-node-executable "/usr/local/bin/node")
 ;(add-file-find-hook-with-pattern "test\\.js$" (lambda () (buster-mode)) "require(\\(\"\\|'\\)buster")
 
-;; Markdown
-(autoload 'markdown-mode "markdown-mode")
-(add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
-(add-hook 'markdown-mode-hook (lambda () (define-key markdown-mode-map (kbd "<tab>") 'yas/expand)))
-
 ;; Highlighting in editmsg-buffer for magit
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG" . conf-javaprop-mode))
 

@@ -105,9 +105,6 @@
 (require 'setup-ffip)
 (require 'setup-html-mode)
 
-;; Language specific setup files
-(eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
-
 ;; Map files to modes
 (require 'mode-mappings)
 
