@@ -59,13 +59,6 @@
    ;; http://www.emacswiki.org/emacs/UndoTree
    ;; More advanced yet simpler undo system inspired by Vim
    (cons 'undo-tree melpa)
-   ;; http://emacswiki.org/emacs/Htmlize
-   ;; Generate HTML output of emacs buffer
-   (cons 'htmlize melpa)
-   ;;
-   (cons 'elisp-slime-nav melpa)
-   ;;
-   (cons 'slime-js marmalade)
    ;; https://github.com/lunaryorn/git-modes
    ;; Mode for git commit messages, helps format the commit messages
    ;; according to convention:
@@ -126,13 +119,6 @@
 (require 'setup-html-mode)
 (require 'setup-circe)
 
-;; Language specific setup files
-(eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
-
-;; Load slime-js when asked for
-(autoload 'slime-js-jack-in-browser "setup-slime-js" nil t)
-(autoload 'slime-js-jack-in-node "setup-slime-js" nil t)
-
 ;; Map files to modes
 (require 'mode-mappings)
 
@@ -172,11 +158,6 @@
 (require 'appearance)
 (require 'my-misc)
 (when is-mac (require 'mac))
-
-;; Elisp go-to-definition with M-. and back again with M-,
-(autoload 'elisp-slime-nav-mode "elisp-slime-nav")
-(add-hook 'emacs-lisp-mode-hook (lambda () (elisp-slime-nav-mode t)))
-; (eval-after-load 'elisp-slime-nav '(diminish 'elisp-slime-nav-mode))
 
 ;; Email, baby
 (require 'setup-mu4e)
