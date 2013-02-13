@@ -62,8 +62,6 @@
    ;; http://emacswiki.org/emacs/Htmlize
    ;; Generate HTML output of emacs buffer
    (cons 'htmlize melpa)
-   ;;
-   (cons 'slime-js marmalade)
    ;; https://github.com/lunaryorn/git-modes
    ;; Mode for git commit messages, helps format the commit messages
    ;; according to convention:
@@ -112,10 +110,6 @@
 
 ;; Language specific setup files
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
-
-;; Load slime-js when asked for
-(autoload 'slime-js-jack-in-browser "setup-slime-js" nil t)
-(autoload 'slime-js-jack-in-node "setup-slime-js" nil t)
 
 ;; Map files to modes
 (require 'mode-mappings)
