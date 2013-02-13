@@ -59,9 +59,6 @@
    ;; http://www.emacswiki.org/emacs/UndoTree
    ;; More advanced yet simpler undo system inspired by Vim
    (cons 'undo-tree melpa)
-   ;; http://emacswiki.org/emacs/Htmlize
-   ;; Generate HTML output of emacs buffer
-   (cons 'htmlize melpa)
    ;; https://github.com/lunaryorn/git-modes
    ;; Mode for git commit messages, helps format the commit messages
    ;; according to convention:
