@@ -98,7 +98,6 @@
 (require 'setup-hippie)
 (require 'setup-perspective)
 (require 'setup-ffip)
-(require 'setup-html-mode)
 
 ;; Map files to modes
 (require 'mode-mappings)
