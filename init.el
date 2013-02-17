@@ -72,6 +72,9 @@
    ;; https://github.com/technomancy/find-file-in-project
    ;; Quickly find any file in a given project.
    (cons 'find-file-in-project marmalade)
+   ;; https://github.com/rooney/zencoding
+   ;; Write HTML and CSS quicker with with Zen Coding.
+   (cons 'zencoding-mode melpa)
    ;; https://github.com/bbatsov/solarized-emacs
    ;; Solarized theme for emacs
    (cons 'solarized-theme melpa)))
@@ -98,6 +101,7 @@
 (require 'setup-hippie)
 (require 'setup-perspective)
 (require 'setup-ffip)
+(require 'setup-html-mode)
 
 ;; Map files to modes
 (require 'mode-mappings)
