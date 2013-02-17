@@ -14,11 +14,6 @@
 (add-to-list 'load-path user-emacs-directory)
 (add-to-list 'load-path site-lisp-dir)
 
-;; Settings for currently logged in user
-(setq user-settings-dir
-      (concat user-emacs-directory "users/" user-login-name))
-(add-to-list 'load-path user-settings-dir)
-
 ;; Add external projects to load path
 (dolist (project (directory-files site-lisp-dir t "\\w+"))
   (when (file-directory-p project)
@@ -77,6 +72,9 @@
    ;; https://github.com/technomancy/find-file-in-project
    ;; Quickly find any file in a given project.
    (cons 'find-file-in-project marmalade)
+   ;; https://github.com/rooney/zencoding
+   ;; Write HTML and CSS quicker with with Zen Coding.
+   (cons 'zencoding-mode melpa)
    ;; https://github.com/bbatsov/solarized-emacs
    ;; Solarized theme for emacs
    (cons 'solarized-theme melpa)
