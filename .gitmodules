@@ -49,9 +49,6 @@
 [submodule "site-lisp/ido-ubiquitous"]
         path = site-lisp/ido-ubiquitous
         url = https://github.com/DarwinAwardWinner/ido-ubiquitous.git
-[submodule "site-lisp/ruby-end"]
-        path = site-lisp/ruby-end
-        url = https://github.com/rejeep/ruby-end.git
 [submodule "site-lisp/change-inner"]
         path = site-lisp/change-inner
         url = https://github.com/magnars/change-inner.el.git
