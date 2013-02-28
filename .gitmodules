@@ -64,9 +64,6 @@
 [submodule "site-lisp/dash"]
 	path = site-lisp/dash
 	url = https://github.com/magnars/dash.el.git
-[submodule "site-lisp/multifiles"]
-	path = site-lisp/multifiles
-	url = https://github.com/magnars/multifiles.el.git
 [submodule "site-lisp/tagedit"]
 	path = site-lisp/tagedit
 	url = https://github.com/magnars/tagedit.git
