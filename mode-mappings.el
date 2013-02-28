@@ -46,10 +46,6 @@
 (autoload 'puppet-mode "puppet-mode")
 (add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
 
-;; Groovy
-(autoload 'groovy-mode "groovy-mode")
-(add-to-list 'auto-mode-alist '("\\.groovy$" . groovy-mode))
-
 ;; Clojure
 (autoload 'clojure-mode "clojure-mode")
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
