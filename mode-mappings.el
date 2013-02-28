@@ -17,12 +17,6 @@
 (autoload 'adventur-mode "adventur-mode")
 (add-to-list 'auto-mode-alist '("\\.adv$" . adventur-mode))
 
-;; Jade and Stylus (sws = significant whitespace)
-(autoload 'sws-mode "sws-mode")
-(autoload 'jade-mode "jade-mode")
-(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
-(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
-
 ;; HTML
 (add-to-list 'auto-mode-alist '("\\.html\\'" . html-mode))
 (add-to-list 'auto-mode-alist '("\\.tag$" . html-mode))
@@ -63,23 +57,8 @@
 ;; SVG
 (add-to-list 'auto-mode-alist '("\\.svg$" . image-mode))
 
-;; JavaScript
-(autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.json$" . javascript-mode))
-(add-to-list 'magic-mode-alist '("#!/usr/bin/env node" . js2-mode))
-
 ;; Configuration files
 (add-to-list 'auto-mode-alist '("\\.offlineimaprc$" . conf-mode))
-
-;; Snippets
-(add-to-list 'auto-mode-alist '("yasnippet/snippets" . snippet-mode))
-(add-to-list 'auto-mode-alist '("\\.yasnippet$" . snippet-mode))
-
-;; Buster.JS
-;(autoload 'buster-mode "buster-mode")
-;(setq buster-node-executable "/usr/local/bin/node")
-;(add-file-find-hook-with-pattern "test\\.js$" (lambda () (buster-mode)) "require(\\(\"\\|'\\)buster")
 
 ;; Highlighting in editmsg-buffer for magit
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG" . conf-javaprop-mode))
