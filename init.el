@@ -43,6 +43,9 @@
    ;; A GNU Emacs library to setup environment variables from the user's shell
    ;; Avoid OS X problem with environment varaiables
    (cons 'exec-path-from-shell melpa)
+   ;; https://github.com/magnars/dash.el
+   ;; A modern list library for Emacs.
+   (cons 'dash melpa)
    ;; http://philjackson.github.com/magit/
    ;; An emacs mode for git.
    (cons 'magit melpa)
