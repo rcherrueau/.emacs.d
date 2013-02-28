@@ -9,10 +9,6 @@
 ;; CSS
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
 
-;; Cucumber
-(autoload 'feature-mode "feature-mode")
-(add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
-
 ;; Adventur
 (autoload 'adventur-mode "adventur-mode")
 (add-to-list 'auto-mode-alist '("\\.adv$" . adventur-mode))
@@ -30,25 +26,6 @@
 (autoload 'crappy-jsp-mode "crappy-jsp-mode")
 (add-to-list 'auto-mode-alist '("\\.jsp$" . crappy-jsp-mode))
 (add-to-list 'auto-mode-alist '("\\.jspf$" . crappy-jsp-mode))
-
-;; Ruby
-(autoload 'rhtml-mode "rhtml-mode")
-(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.watchr$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
-(add-to-list 'auto-mode-alist '("capfile" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
-
-;; Puppet
-(autoload 'puppet-mode "puppet-mode")
-(add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
-
-;; Groovy
-(autoload 'groovy-mode "groovy-mode")
-(add-to-list 'auto-mode-alist '("\\.groovy$" . groovy-mode))
 
 ;; Clojure
 (autoload 'clojure-mode "clojure-mode")
