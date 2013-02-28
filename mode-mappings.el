@@ -9,10 +9,6 @@
 ;; CSS
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
 
-;; Cucumber
-(autoload 'feature-mode "feature-mode")
-(add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
-
 ;; Adventur
 (autoload 'adventur-mode "adventur-mode")
 (add-to-list 'auto-mode-alist '("\\.adv$" . adventur-mode))
