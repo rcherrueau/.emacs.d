@@ -122,8 +122,8 @@
 (require 'setup-perspective)
 (require 'setup-ffip)
 (require 'setup-html-mode)
-(require 'setup-circe)
 (require 'scala-mode2)
+(require 'setup-circe)
 
 ;; Map files to modes
 (require 'mode-mappings)
@@ -165,7 +165,11 @@
 ;; Email, baby
 (require 'setup-mu4e)
 
+;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html
 ;; Emacs server
+;; Emacs as an edit server, so that it “listens” for external edit
+;; requests and share buffers, a command history, or other kinds of
+;; information with any existing Emacs process
 (require 'server)
 (unless (server-running-p)
   (server-start))

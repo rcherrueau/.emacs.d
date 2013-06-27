@@ -1,4 +1,4 @@
-;; Client for IRC in Emacs.
+;; IRC Client for Emacs.
 ;; Integrates well with the rest of the editor, using standard Emacs
 ;; key bindings and indicating activity in channels in the status bar
 ;; so it stays out of your way unless you want to use it.
@@ -18,7 +18,7 @@
 ;; Identifies yourself on bitlbee.
 ;; Identificaion is done only if bitlbee-nick and bitlbee-password are
 ;; defined in private feature
-(when (featurep 'private) 
+(when (featurep 'private)
   (setq circe-network-options
         `(("Bitlbee"
            :nick ,bitlbee-nick
