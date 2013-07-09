@@ -47,11 +47,9 @@ If you want to use my settings straight out of the box, here are some things to 
 
  * Add your user- and project-specific stuff in .emacs.d/users/[machine name]/*.el
 
- * `C-h` is rebound to backspace, like in the shell. Get help on `F1` instead.
-
  * Autocomplete with `C-.`
 
- * expand-region is your friend. Find its bound key by doing `F1 f er/expand-region`
+ * expand-region is your friend. Find its bound key by doing `C-h f er/expand-region`
 
  * annoying-arrows suggests alternative ways of moving around if you use the
    arrow keys excessively.
@@ -132,6 +130,6 @@ overview of the most commonly used shortcuts to get you through this pain:
 
 ### Help
 
-* `F1 t   ` Basic tutorial
-* `F1 k   ` Help for a keybinding
-* `F1 r   ` Emacs' extensive documentation
+* `C-h t   ` Basic tutorial
+* `C-h k   ` Help for a keybinding
+* `C-h r   ` Emacs' extensive documentation
