@@ -85,6 +85,11 @@
    ;; New scala major mode for emacs 24. It is a complete rewrite
    ;; based on the Scala Language Specification 2.9.
    (cons 'scala-mode2 melpa)
+   ;; http://www.nongnu.org/geiser
+   ;; Geiser is a collection of Emacs major and minor modes that
+   ;; conspire with one or more Scheme interpreters to keep the Lisp
+   ;; Machine Spirit alive. Use for racket!
+   (cons 'geiser marmalade)
    ;; https://github.com/jorgenschaefer/circe Circe is a Client for
    ;; IRC in Emacs. It integrates well with the rest of the editor,
    ;; using standard Emacs key bindings and indicating activity in
@@ -125,6 +130,7 @@
 (require 'setup-html-mode)
 (require 'scala-mode2)
 (require 'setup-circe)
+(require 'setup-geiser)
 
 ;; Map files to modes
 (require 'mode-mappings)
