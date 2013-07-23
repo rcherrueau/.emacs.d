@@ -70,7 +70,6 @@
 
 ;; Killing text
 (global-set-key (kbd "C-S-k") 'kill-and-retry-line)
-(global-set-key (kbd "C-w") 'kill-region-or-backward-word)
 (global-set-key (kbd "C-c C-w") 'kill-to-beginning-of-line)
 
 ;; Use M-w for copy-line if no active region
