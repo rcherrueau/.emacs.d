@@ -5,7 +5,7 @@
 (require 'geiser)
 
 ;; Set path of Racket REPL
-(when (eq 'geiser-racket-collects nil)
+(when (eq (boundp 'geiser-racket-collects) nil)
   (when is-mac
     (setq geiser-racket-binary "/Applications/Racket v5.3.4/bin/racket")))
 
