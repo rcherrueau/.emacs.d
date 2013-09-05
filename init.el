@@ -101,6 +101,7 @@
 (eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'grep '(require 'setup-rgrep))
 (eval-after-load 'shell '(require 'setup-shell))
+(eval-after-load 'iso-transl '(require 'setup-iso-transl))
 (require 'setup-hippie)
 (require 'setup-perspective)
 (require 'setup-ffip)
