@@ -24,6 +24,9 @@
            :nick ,bitlbee-nick
            :nickserv-password ,bitlbee-password))))
 
+(enable-circe-color-nicks)
+(enable-circe-highlight-all-nicks)
+
 ;; Launch bitlbee
 (defun bitlbee ()
   "Connect to bitlbee"
