@@ -13,7 +13,8 @@
 (load-theme 'solarized-light t)
 
 ;; Font size to 11pt
-(set-face-attribute 'default nil :height 110)
+(set-face-attribute 'default nil :height 110
+                                 :font "Ubuntu Regular")
 
 ;; Highlight current line
 (global-hl-line-mode 1)
