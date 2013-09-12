@@ -14,7 +14,7 @@
 
 ;; Font size to 11pt
 (set-face-attribute 'default nil :height 110
-                                 :font "Ubuntu Regular")
+                                 :font "Ubuntu Mono")
 
 ;; Highlight current line
 (global-hl-line-mode 1)
