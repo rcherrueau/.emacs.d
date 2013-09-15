@@ -71,6 +71,7 @@
 ;; Killing text
 (global-set-key (kbd "C-S-k") 'kill-and-retry-line)
 (global-set-key (kbd "C-c C-w") 'kill-to-beginning-of-line)
+(global-set-key (kbd "C-^") 'delete-indentation)
 
 ;; Use M-w for copy-line if no active region
 (global-set-key (kbd "M-w") 'save-region-or-current-line)
@@ -119,6 +120,12 @@
 (global-set-key (kbd "C-x -") 'rotate-windows)
 (global-set-key (kbd "C-x C--") 'toggle-window-split)
 (global-unset-key (kbd "C-x C-+")) ;; don't zoom like this
+
+;; Move windows, even in org-mode
+(global-set-key (kbd "<s-right>") 'windmove-right)
+(global-set-key (kbd "<s-left>") 'windmove-left)
+(global-set-key (kbd "<s-up>") 'windmove-up)
+(global-set-key (kbd "<s-down>") 'windmove-down)
 
 ;; Add region to *multifile*
 (global-set-key (kbd "C-!") 'mf/mirror-region-in-multifile)
@@ -185,12 +192,6 @@
 
 ;; Create scratch buffer
 (global-set-key (kbd "C-c b") 'create-scratch-buffer)
-
-;; Move windows, even in org-mode
-(global-set-key (kbd "<s-right>") 'windmove-right)
-(global-set-key (kbd "<s-left>") 'windmove-left)
-(global-set-key (kbd "<s-up>") 'windmove-up)
-(global-set-key (kbd "<s-down>") 'windmove-down)
 
 ;; Magit
 (global-set-key (kbd "C-x m") 'magit-status)
