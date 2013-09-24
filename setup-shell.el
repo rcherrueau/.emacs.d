@@ -16,6 +16,15 @@
 (require 'shell-command)
 (shell-command-completion-mode)
 
+;; Open shell in emacs with a given working directory
+;; http://stackoverflow.com/a/4880359
+;; name: the buffer name
+;; dir: working directory
+(defun shell-dir (name dir)
+  (interactive "sShell name: \nDDirectory: ")
+    (let ((default-directory dir))
+        (shell (format "*%s*" name))))
+
 ;; C-d to kill buffer if process is dead.
 (defun comint-delchar-or-eof-or-kill-buffer (arg)
   (interactive "p")
