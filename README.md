@@ -98,7 +98,7 @@ overview of the most commonly used shortcuts to get you through this pain:
 * `C-y    ` Paste (aka yank)
 * `M-y    ` Cycle last paste through previous kills
 * `C-x C-y` Choose what to paste from previous kills
-* `C-@    ` Mark stuff quickly. Press multiple times
+* `C-=    ` Mark stuff quickly. Press multiple times
 
 ### General
 
