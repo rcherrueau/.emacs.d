@@ -90,6 +90,12 @@
    ;; conspire with one or more Scheme interpreters to keep the Lisp
    ;; Machine Spirit alive. Use for racket!
    (cons 'geiser marmalade)
+   ;; https://github.com/alpaker/Fill-Column-Indicator
+   ;; Many modern editors and IDEs can graphically indicate the
+   ;; location of the fill column by drawing a thin line (in design
+   ;; parlance, a `rule') down the length of the editing window.
+   ;; Fill-column-indicator implements this facility in Emacs.
+   (cons 'fill-column-indicator marmalade)
    ;; https://github.com/jorgenschaefer/circe Circe is a Client for
    ;; IRC in Emacs. It integrates well with the rest of the editor,
    ;; using standard Emacs key bindings and indicating activity in
@@ -151,10 +157,6 @@
 (require 'smart-forward)
 (require 'change-inner)
 
-;; Fill column indicator
-(require 'fill-column-indicator)
-(setq fci-rule-color "#111122")
-
 ;; Browse kill ring
 (require 'browse-kill-ring)
 (setq browse-kill-ring-quit-action 'save-and-restore)
@@ -186,4 +188,3 @@
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
-

@@ -1,3 +1,5 @@
+(require 'fill-column-indicator)
+
 ;; Hide tools, scroll & menu-bar
 ;; Change frame title, add abolute path to buffer name
 (when window-system
@@ -13,11 +15,18 @@
 (load-theme 'solarized-light t)
 
 ;; Font size to 11pt
-(set-face-attribute 'default nil :height 110
-                                 :font "Ubuntu Mono")
+(if window-system
+    (set-face-attribute 'default nil
+                        :height 130
+                        :font "Ubuntu Mono"))
 
 ;; Highlight current line
 (global-hl-line-mode 1)
+
+;; Indicate the location of the fill column
+(setq fci-rule-width 5)
+;; get faces with M-x liste-faces-display ;)
+(setq fci-rule-color (face-attribute 'highlight :background))
 
 ;; Flash the frame to represent a bell
 (setq visible-bell t)
