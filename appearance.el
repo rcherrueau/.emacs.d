@@ -12,7 +12,7 @@
 (add-hook 'before-make-frame-hook 'turn-off-tool-bar)
 
 ;; Theme
-(load-theme 'solarized-light t)
+(load-theme 'zenburn t)
 
 ;; Font size to 11pt
 (if window-system

@@ -81,6 +81,9 @@
    ;; https://github.com/bbatsov/solarized-emacs
    ;; Solarized theme for emacs
    (cons 'solarized-theme melpa)
+   ;; https://github.com/bbatsov/zenburn-emacs
+   ;; Zenburn theme for Emacs
+   (cons 'zenburn-theme melpa)
    ;; https://github.com/hvesalai/scala-mode2
    ;; New scala major mode for emacs 24. It is a complete rewrite
    ;; based on the Scala Language Specification 2.9.
