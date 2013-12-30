@@ -96,6 +96,10 @@
    ;; parlance, a `rule') down the length of the editing window.
    ;; Fill-column-indicator implements this facility in Emacs.
    (cons 'fill-column-indicator marmalade)
+   ;; https://github.com/haskell/haskell-mode
+   ;; A major mode for editing Haskell (the functional programming
+   ;; language, see URL `http://www.haskell.org') in Emacs.
+   (cons 'haskell-mode marmalade)
    ;; https://github.com/jorgenschaefer/circe Circe is a Client for
    ;; IRC in Emacs. It integrates well with the rest of the editor,
    ;; using standard Emacs key bindings and indicating activity in
@@ -139,6 +143,7 @@
 (require 'setup-circe)
 (require 'setup-geiser)
 (require 'setup-prolog)
+(require 'setup-haskell)
 
 ;; Map files to modes
 (require 'mode-mappings)
