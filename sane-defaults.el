@@ -111,4 +111,20 @@
     (dotimes (i 10)
       (when (= p (point)) ad-do-it))))
 
+;; Emulation of the vi % command: works when the point is either right
+;; before or right after a parenthesis character, and also works with
+;; shift-selection. Note: when you are in a cluster of nested sexps,
+;; the default association is with the bracket that you are
+;; immediately outside of, to match the behavior of forward-sexp and
+;; backward-sexp.
+;; http://www.emacswiki.org/emacs/NavigatingParentheses
+(defun forward-or-backward-sexp (&optional arg)
+  "Go to the matching parenthesis character if one is adjacent to point."
+  (interactive "^p")
+  (cond ((looking-at "\\s(") (forward-sexp arg))
+        ((looking-back "\\s)" 1) (backward-sexp arg))
+        ;; Now, try to succeed from inside of a bracket
+        ((looking-at "\\s)") (forward-char) (backward-sexp arg))
+        ((looking-back "\\s(" 1) (backward-char) (forward-sexp arg))))
+
 (provide 'sane-defaults)
