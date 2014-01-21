@@ -279,6 +279,6 @@
 (define-key occur-mode-map (kbd "p") 'previous-line)
 
 ;; Emulation of the vi % command
-(global-set-key (kbd "C-ù") 'forward-or-backwar-sexp)
+(global-set-key (kbd "C-ù") 'forward-or-backward-sexp)
 
 (provide 'key-bindings)
