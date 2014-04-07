@@ -17,14 +17,14 @@
 ;; Font size to 11pt
 (if window-system
     (set-face-attribute 'default nil
-                        :height 130
-                        :font "Ubuntu Mono"))
+                        :font "Ubuntu Mono-11"))
 
 ;; Highlight current line
 (global-hl-line-mode 1)
 
 ;; Indicate the location of the fill column
 (setq fci-rule-width 5)
+
 ;; get faces with M-x liste-faces-display ;)
 (setq fci-rule-color (face-attribute 'highlight :background))
 
