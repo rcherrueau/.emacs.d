@@ -17,7 +17,9 @@
 ;; Font size to 11pt
 (if window-system
     (set-face-attribute 'default nil
-                        :font "Ubuntu Mono-11"))
+                        :font (if is-mac
+                                  "Ubuntu Mono-13"
+                                "Ubuntu Mono-11")))
 
 ;; Highlight current line
 (global-hl-line-mode 1)
