@@ -20,7 +20,7 @@
 ;; http://stackoverflow.com/a/4880359
 ;; name: the buffer name
 ;; dir: working directory
-(defun shell-dir (name dir)
+(defun shell-here (name dir)
   (interactive "sShell name: \nDDirectory: ")
     (let ((default-directory dir))
         (shell (format "*%s*" name))))
