@@ -26,7 +26,7 @@
 ;; Indicate the location of the fill column
 (setq fci-rule-width 5)
 ;; get faces with M-x liste-faces-display ;)
-(setq fci-rule-color (face-attribute 'highlight :background))
+;(setq fci-rule-color (face-attribute 'highlight :background))
 
 ;; Flash the frame to represent a bell
 (setq visible-bell t)
