@@ -147,6 +147,7 @@
 (require 'setup-geiser)
 (require 'setup-prolog)
 (require 'setup-haskell)
+(require 'setup-java)
 
 ;; Map files to modes
 (require 'mode-mappings)

@@ -278,7 +278,7 @@
 ;; - set Alt-key to Super-key
 ;; - Set Pomme-key to Meta-key
 ;; http://www.gnu.org/software/emacs/manual/html_node/elisp/X11-Keysyms.html
-(unless (and (not is-mac) (boundp 'mac-keyboard))
+(when (and (not is-mac) (boundp 'mac-keyboard))
   (setq x-meta-keysym 'super)
   (setq x-super-keysym 'meta))
 
