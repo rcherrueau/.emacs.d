@@ -18,7 +18,7 @@
 ;; Identifies yourself on bitlbee.
 ;; Identificaion is done only if bitlbee-nick and bitlbee-password are
 ;; defined in private feature
-(when (featurep 'private)
+(when (and (boundp 'bitlbee-nick) (boundp 'bitlbee-password))
   (setq circe-network-options
         `(("Bitlbee"
            :nick ,bitlbee-nick
