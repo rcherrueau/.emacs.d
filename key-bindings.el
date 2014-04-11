@@ -273,6 +273,9 @@
 ;; Emulation of the vi % command
 (global-set-key (kbd "C-ù") 'forward-or-backward-sexp)
 
+;; Insert λ on M-\
+(global-set-key (kbd "M-\\") "λ")
+
 
 ;; When not is mac but using mac-keyborad:
 ;; - set Alt-key to Super-key
