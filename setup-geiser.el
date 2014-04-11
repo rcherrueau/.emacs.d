@@ -8,7 +8,7 @@
 (when (eq (boundp 'geiser-racket-collects) nil)
   (if is-mac
       (setq geiser-racket-binary "/Applications/Racket v6.0/bin/racket")
-    (setq geiser-racket-binary "/home/rl3x/racket-5.3.6/bin/racket")))
+    (setq geiser-racket-binary "/usr/bin/racket")))
 
 ;; Set racket as the default REPL
 (setq geiser-active-implementations '(racket))
