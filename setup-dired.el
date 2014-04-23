@@ -31,7 +31,6 @@
   (dired-back-to-start-of-files))
 
 (define-key dired-mode-map (vector 'remap 'beginning-of-buffer) 'dired-back-to-top)
-(define-key dired-mode-map (vector 'remap 'smart-up) 'dired-back-to-top)
 
 ;; M-down is nicer in dired if it moves to the last file
 (defun dired-jump-to-bottom ()
@@ -41,7 +40,6 @@
   (dired-back-to-start-of-files))
 
 (define-key dired-mode-map (vector 'remap 'end-of-buffer) 'dired-jump-to-bottom)
-(define-key dired-mode-map (vector 'remap 'smart-down) 'dired-jump-to-bottom)
 
 ;; Delete with C-x C-k to match file buffers and magit
 (define-key dired-mode-map (kbd "C-x C-k") 'dired-do-delete)

@@ -163,7 +163,6 @@
 (require 'jump-char)
 (require 'eproject)
 (require 'wgrep)
-(require 'smart-forward)
 (require 'change-inner)
 
 ;; Browse kill ring
