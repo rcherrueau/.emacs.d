@@ -163,7 +163,6 @@
 (require 'jump-char)
 (require 'eproject)
 (require 'wgrep)
-(require 'change-inner)
 
 ;; Smart M-x is smart
 (require 'smex)

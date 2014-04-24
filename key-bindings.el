@@ -82,10 +82,6 @@
 (global-set-key (kbd "M-m") 'jump-char-forward)
 (global-set-key (kbd "M-M") 'jump-char-backward)
 
-;; vim's ci and co commands
-(global-set-key (kbd "M-I") 'change-inner)
-(global-set-key (kbd "M-O") 'change-outer)
-
 ;; Create new frame
 (define-key global-map (kbd "C-x C-n") 'make-frame-command)
 
