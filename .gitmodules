@@ -1,6 +1,3 @@
-[submodule "site-lisp/yaml-mode"]
-        path = site-lisp/yaml-mode
-        url = https://github.com/yoshiki/yaml-mode.git
 [submodule "site-lisp/expand-region"]
         path = site-lisp/expand-region
         url = https://github.com/magnars/expand-region.el.git
