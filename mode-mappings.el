@@ -22,11 +22,6 @@
             (require 'rename-sgml-tag)
             (define-key sgml-mode-map (kbd "C-c C-r") 'rename-sgml-tag)))
 
-;; JSP
-(autoload 'crappy-jsp-mode "crappy-jsp-mode")
-(add-to-list 'auto-mode-alist '("\\.jsp$" . crappy-jsp-mode))
-(add-to-list 'auto-mode-alist '("\\.jspf$" . crappy-jsp-mode))
-
 ;; Clojure
 (autoload 'clojure-mode "clojure-mode")
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
