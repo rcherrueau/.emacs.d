@@ -181,9 +181,6 @@
 (global-set-key (kbd "C-x m") 'magit-status)
 (autoload 'magit-status "magit")
 
-;; Mu4e
-(global-set-key (kbd "C-x M") 'mu4e-up-to-date-status)
-
 ;; Clever newlines
 (global-set-key (kbd "<C-return>") 'new-line-below)
 (global-set-key (kbd "<C-S-return>") 'new-line-above)

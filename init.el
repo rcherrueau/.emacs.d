@@ -176,9 +176,6 @@
 (require 'my-misc)
 (when is-mac (require 'mac))
 
-;; Email, baby
-(require 'setup-mu4e)
-
 ;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html
 ;; Emacs server
 ;; Emacs as an edit server, so that it “listens” for external edit
