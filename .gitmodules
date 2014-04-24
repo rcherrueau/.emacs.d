@@ -16,9 +16,6 @@
 [submodule "site-lisp/jump-char"]
         path = site-lisp/jump-char
         url = https://github.com/lewang/jump-char.git
-[submodule "site-lisp/browse-kill-ring"]
-        path = site-lisp/browse-kill-ring
-        url = https://github.com/T-J-Teru/browse-kill-ring.git
 [submodule "site-lisp/wgrep"]
         path = site-lisp/wgrep
         url = https://github.com/magnars/Emacs-wgrep
@@ -28,18 +25,9 @@
 [submodule "site-lisp/ido-ubiquitous"]
         path = site-lisp/ido-ubiquitous
         url = https://github.com/DarwinAwardWinner/ido-ubiquitous.git
-[submodule "site-lisp/change-inner"]
-        path = site-lisp/change-inner
-        url = https://github.com/magnars/change-inner.el.git
-[submodule "site-lisp/crappy-jsp-mode"]
-	path = site-lisp/crappy-jsp-mode
-	url = git://github.com/magnars/crappy-jsp-mode.git
 [submodule "site-lisp/s"]
 	path = site-lisp/s
 	url = https://github.com/magnars/s.el.git
 [submodule "site-lisp/tagedit"]
 	path = site-lisp/tagedit
 	url = https://github.com/magnars/tagedit.git
-[submodule "site-lisp/fold-this"]
-	path = site-lisp/fold-this
-	url = https://github.com/magnars/fold-this.el.git

@@ -82,10 +82,6 @@
 (global-set-key (kbd "M-m") 'jump-char-forward)
 (global-set-key (kbd "M-M") 'jump-char-backward)
 
-;; vim's ci and co commands
-(global-set-key (kbd "M-I") 'change-inner)
-(global-set-key (kbd "M-O") 'change-outer)
-
 ;; Create new frame
 (define-key global-map (kbd "C-x C-n") 'make-frame-command)
 
@@ -185,9 +181,6 @@
 (global-set-key (kbd "C-x m") 'magit-status)
 (autoload 'magit-status "magit")
 
-;; Mu4e
-(global-set-key (kbd "C-x M") 'mu4e-up-to-date-status)
-
 ;; Clever newlines
 (global-set-key (kbd "<C-return>") 'new-line-below)
 (global-set-key (kbd "<C-S-return>") 'new-line-above)
@@ -198,11 +191,6 @@
 ;; Line movement
 (global-set-key (kbd "<C-S-down>") 'move-line-down)
 (global-set-key (kbd "<C-S-up>") 'move-line-up)
-
-;; Fold the active region
-(global-set-key (kbd "C-c C-f") 'fold-this-all)
-(global-set-key (kbd "C-c C-F") 'fold-this)
-(global-set-key (kbd "C-c M-f") 'fold-this-unfold-all)
 
 ;; Yank and indent
 (global-set-key (kbd "C-S-y") 'yank-unindented)
@@ -215,9 +203,6 @@
 
 ;; Increase number at point (or other change based on prefix arg)
 (global-set-key (kbd "C-+") 'change-number-at-point)
-
-;; Browse the kill ring
-(global-set-key (kbd "C-x C-y") 'browse-kill-ring)
 
 ;; Buffer file functions
 (global-set-key (kbd "C-x t") 'touch-buffer-file)
