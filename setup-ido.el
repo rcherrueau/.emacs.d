@@ -1,7 +1,6 @@
 ;; Interactively Do Things
 ;; http://emacswiki.org/emacs/InteractivelyDoThings
 ;; Interactive list in mode line durring file and buffer search
-
 (require 'ido)
 (ido-mode t)
 (setq ido-enable-prefix nil
@@ -30,15 +29,24 @@
 ;; Use ido everywhere
 ;; https://github.com/DarwinAwardWinner/ido-ubiquitous
 (require 'ido-ubiquitous)
+(setq ido-everywhere t)
 (ido-ubiquitous-mode 1)
 
-;; Fix ido-ubiquitous for newer packages
-(defmacro ido-ubiquitous-use-new-completing-read (cmd package)
-  `(eval-after-load ,package
-     '(defadvice ,cmd (around ido-ubiquitous-new activate)
-        (let ((ido-ubiquitous-enable-compatibility nil))
-          ad-do-it))))
+;; ;; Fix ido-ubiquitous for newer packages
+;; (defmacro ido-ubiquitous-use-new-completing-read (cmd package)
+;;   `(eval-after-load ,package
+;;      '(defadvice ,cmd (around ido-ubiquitous-new activate)
+;;         (let ((ido-ubiquitous-enable-compatibility nil))
+;;           ad-do-it))))
 
-(ido-ubiquitous-use-new-completing-read webjump 'webjump)
+;; (ido-ubiquitous-use-new-completing-read webjump 'webjump)
+;; Smart M-x is smart
+
+;; https://github.com/nonsequitur/smex
+;; Smex is a M-x enhancement for Emacs. Built on top of Ido, it
+;; provides a convenient interface to your recently and most
+;; frequently used commands. And to all the other commands, too.
+(require 'smex)
+(smex-initialize)
 
 (provide 'setup-ido)

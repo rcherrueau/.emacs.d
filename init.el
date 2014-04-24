@@ -68,6 +68,17 @@
    ;; https://github.com/lunaryorn/git-modes
    ;; Mode for editing gitignore file
    (cons 'gitignore-mode melpa)
+   ;; https://github.com/DarwinAwardWinner/ido-ubiquitous
+   ;; Gimme some ido... everywhere! Does what you were really hoping
+   ;; for when you did (setq ido-everywhere t). Replaces stock emacs
+   ;; completion with ido completion wherever it is possible to do so
+   ;; without breaking things.
+   (cons 'ido-ubiquitous marmalade)
+   ;; https://github.com/nonsequitur/smex
+   ;; Smex is a M-x enhancement for Emacs. Built on top of Ido, it
+   ;; provides a convenient interface to your recently and most
+   ;; frequently used commands. And to all the other commands, too.
+   (cons 'smex marmalade)
    ;; https://github.com/nex3/perspective-el
    ;; Provides multiple workspace that makes it easy to work on many
    ;; separate projects without getting lost in all the buffers.
@@ -134,7 +145,7 @@
 (when is-mac (exec-path-from-shell-initialize))
 
 ;; Setup extensions
-(eval-after-load 'ido '(require 'setup-ido))
+(require 'setup-ido)
 (eval-after-load 'org '(require 'setup-org))
 (eval-after-load 'dired '(require 'setup-dired))
 (eval-after-load 'magit '(require 'setup-magit))
@@ -167,10 +178,6 @@
 (require 'jump-char)
 (require 'eproject)
 (require 'wgrep)
-
-;; Smart M-x is smart
-(require 'smex)
-(smex-initialize)
 
 ;; Setup key bindings
 (require 'key-bindings)
