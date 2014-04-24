@@ -103,6 +103,10 @@
    ;; A major mode for editing Haskell (the functional programming
    ;; language, see URL `http://www.haskell.org') in Emacs.
    (cons 'haskell-mode marmalade)
+   ;; https://github.com/ejmr/php-mode
+   ;; updates PHP Mode with features to make it more friendly to use
+   ;; with PHP 5.4 and later.
+   (cons 'php-mode melpa)
    ;; https://github.com/jorgenschaefer/circe Circe is a Client for
    ;; IRC in Emacs. It integrates well with the rest of the editor,
    ;; using standard Emacs key bindings and indicating activity in
