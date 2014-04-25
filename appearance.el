@@ -14,12 +14,22 @@
 ;; Theme
 (load-theme 'zenburn t)
 
-;; Font size to 11pt
-(if window-system
-    (set-face-attribute 'default nil
-                        :font (if is-mac
-                                  "Ubuntu Mono-13"
-                                "Ubuntu Mono-11")))
+;; Font size and appearance
+(when window-system
+  (if is-mac
+      (progn
+        (set-frame-font "Ubuntu Mono-13" nil t)
+        ; Ubuntu Mono for greek letter.
+        (set-fontset-font "fontset-default"
+                          '(#x374 . #x3FF)
+                          (font-spec :family "Ubuntu Mono")))
+    (set-frame-font "Ubuntu Mono-11" nil t))
+  ; DejaVu Sans Mono for mathematical symbol
+  (set-fontset-font "fontset-default"
+                    '(#x2190 . #x22ff)
+                    (font-spec :family "DejaVu Sans Mono"))
+  (setq face-font-rescale-alist '((".*DejaVu.Sans.Mono.*" . 0.9))))
+
 
 ;; Highlight current line
 (global-hl-line-mode 1)
