@@ -18,12 +18,15 @@
 (when window-system
   (if is-mac
       (progn
+        ; Ubuntu Mono as general font
         (set-frame-font "Ubuntu Mono-13" nil t)
         ; Ubuntu Mono for greek letter.
         (set-fontset-font "fontset-default"
                           '(#x374 . #x3FF)
                           (font-spec :family "Ubuntu Mono")))
     (set-frame-font "Ubuntu Mono-11" nil t))
+  ; Fallback Character Encodong: this character encoding is used for
+  ; legacy content that fails to declare its encoding.
   ; DejaVu Sans Mono for mathematical symbol
   (set-fontset-font "fontset-default"
                     '(#x2190 . #x22ff)
