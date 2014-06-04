@@ -108,7 +108,6 @@ overview of the most commonly used shortcuts to get you through this pain:
 * `C-_    ` Undo
 * `M-_    ` Redo
 * `C-x u  ` Show the undo-tree
-* `C-x m  ` Open magit. It's a magical git interface for emacs
 
 ### Navigation
 

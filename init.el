@@ -46,9 +46,6 @@
    ;; https://github.com/magnars/dash.el
    ;; A modern list library for Emacs.
    (cons 'dash melpa)
-   ;; http://philjackson.github.com/magit/
-   ;; An emacs mode for git.
-   (cons 'magit melpa)
    ;; https://github.com/defunkt/gist.el
    ;; Yet another Emacs paste mode, this one for Gist. Contribute to
    ;; gist.el development by creating an account on GitHub.
@@ -57,17 +54,6 @@
    ;; http://www.emacswiki.org/emacs/UndoTree
    ;; More advanced yet simpler undo system inspired by Vim
    (cons 'undo-tree melpa)
-   ;; https://github.com/lunaryorn/git-modes
-   ;; Mode for git commit messages, helps format the commit messages
-   ;; according to convention:
-   ;; http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-   (cons 'git-commit-mode melpa)
-   ;; https://github.com/lunaryorn/git-modes
-   ;; Mode for editing gitconfig file
-   (cons 'gitconfig-mode melpa)
-   ;; https://github.com/lunaryorn/git-modes
-   ;; Mode for editing gitignore file
-   (cons 'gitignore-mode melpa)
    ;; https://github.com/DarwinAwardWinner/ido-ubiquitous
    ;; Gimme some ido... everywhere! Does what you were really hoping
    ;; for when you did (setq ido-everywhere t). Replaces stock emacs
@@ -148,7 +134,6 @@
 (require 'setup-ido)
 (eval-after-load 'org '(require 'setup-org))
 (eval-after-load 'dired '(require 'setup-dired))
-(eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'grep '(require 'setup-rgrep))
 (eval-after-load 'shell '(require 'setup-shell))
 (eval-after-load 'iso-transl '(require 'setup-iso-transl))

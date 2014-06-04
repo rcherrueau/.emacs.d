@@ -177,10 +177,6 @@
 ;; Create scratch buffer
 (global-set-key (kbd "C-c b") 'create-scratch-buffer)
 
-;; Magit
-(global-set-key (kbd "C-x m") 'magit-status)
-(autoload 'magit-status "magit")
-
 ;; Clever newlines
 (global-set-key (kbd "<C-return>") 'new-line-below)
 (global-set-key (kbd "<C-S-return>") 'new-line-above)
