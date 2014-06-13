@@ -1,21 +1,15 @@
-# My emacs settings
-
-An ever-changing set of emacs settings. Micro-optimizations are super fun.
-These are used in the [Emacs Rocks](http://emacsrocks.com) screencasts.
-You can also see some thoughts behind the settings on my [What the .emacs.d!?](http://whattheemacsd.com)-blog.
-
 ## Setup
 
 To grab all the dependencies, either:
 
-    git clone git://github.com/magnars/.emacs.d.git
+    git clone git://github.com/rcherrueau/.emacs.d.git
     cd .emacs.d
     git submodule init
     git submodule update
 
 or on git v1.6.5 or later:
 
-    git clone --recursive git://github.com/magnars/.emacs.d.git
+    git clone --recursive git://github.com/rcherrueau/.emacs.d.git
 
 The first time you start emacs, it will install some additional packages
 that are best handled by the package manager.
