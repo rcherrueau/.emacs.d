@@ -104,6 +104,11 @@
    ;; updates PHP Mode with features to make it more friendly to use
    ;; with PHP 5.4 and later.
    (cons 'php-mode melpa)
+   ;; https://github.com/capitaomorte/yasnippet
+   ;; YASnippet is a template system for Emacs. It allows you to type
+   ;; an abbreviation and automatically expand it into function
+   ;; templates.
+   (cons 'yasnippet melpa)
    ;; https://github.com/jorgenschaefer/circe Circe is a Client for
    ;; IRC in Emacs. It integrates well with the rest of the editor,
    ;; using standard Emacs key bindings and indicating activity in
@@ -148,6 +153,7 @@
 (require 'setup-prolog)
 (require 'setup-haskell)
 (require 'setup-java)
+(require 'setup-yasnippet)
 
 ;; Map files to modes
 (require 'mode-mappings)
