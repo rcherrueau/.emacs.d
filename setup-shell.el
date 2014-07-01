@@ -4,13 +4,13 @@
 ;; So mac users should ln -s .profile .bashrc
 
 ;; Bash-completion
-(autoload 'bash-completion-dynamic-complete
-  "bash-completion"
-  "BASH completion hook")
-(add-hook 'shell-dynamic-complete-functions
-          'bash-completion-dynamic-complete)
-(add-hook 'shell-command-complete-functions
-          'bash-completion-dynamic-complete)
+;; (autoload 'bash-completion-dynamic-complete
+;;   "bash-completion"
+;;   "BASH completion hook")
+;; (add-hook 'shell-dynamic-complete-functions
+;;           'bash-completion-dynamic-complete)
+;; (add-hook 'shell-command-complete-functions
+;;           'bash-completion-dynamic-complete)
 
 ;; Tab-completion for shell-command
 (require 'shell-command)
