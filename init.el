@@ -81,6 +81,11 @@
    ;; https://github.com/bbatsov/zenburn-emacs
    ;; Zenburn theme for Emacs
    (cons 'zenburn-theme melpa)
+   ;; https://github.com/bnbeckwith/writegood-mode
+   ;; Minor mode to aid in finding common writing problems. It
+   ;; highlights text based on a set of weasel-words, passive-voice
+   ;; and duplicate words.
+   (cons 'writegood-mode melpa)
    ;; https://github.com/hvesalai/scala-mode2
    ;; New scala major mode for emacs 24. It is a complete rewrite
    ;; based on the Scala Language Specification 2.9.
