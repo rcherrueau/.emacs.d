@@ -10,6 +10,12 @@
 (defadvice kill-whole-line (after fix-cookies activate)
   (myorg-update-parent-cookie))
 
+;; Disable M-p/n binding for org-shitfup/down
+;; Let's use M-p/n for backward/forward-paragraph instead (as it's
+;; definied in key-binding.el)
+(define-key org-mode-map "\M-n" nil)
+(define-key org-mode-map "\M-p" nil)
+
 ;; Flyspell
 (add-hook 'org-mode-hook 'flyspell-mode)
 
