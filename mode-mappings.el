@@ -31,4 +31,16 @@
 (autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
 (add-to-list 'auto-mode-alist '("\\.pl$" . prolog-mode))
 
+;; ProVerif
+(let ((mode-msg "Major mode for editing ProVerif code."))
+  (autoload 'proverif-pv-mode "proverif" mode-msg t)
+  (autoload 'proverif-pi-mode "proverif" mode-msg t)
+  (autoload 'proverif-horn-mode "proverif" mode-msg t)
+  (autoload 'proverif-horntype-mode "proverif" mode-msg t))
+
+(add-to-list 'auto-mode-alist '("\\.horn$" . proverif-horn-mode))
+(add-to-list 'auto-mode-alist '("\\.horntype$" . proverif-horntype-mode))
+(add-to-list 'auto-mode-alist '("\\.pv$" . proverif-pv-mode))
+(add-to-list 'auto-mode-alist '("\\.pi$" . proverif-pi-mode))
+
 (provide 'mode-mappings)
