@@ -152,7 +152,7 @@
 (require 'setup-perspective)
 (require 'setup-ffip)
 (require 'setup-html-mode)
-(require 'scala-mode2)
+(require 'setup-scala)
 (require 'setup-circe)
 (require 'setup-geiser)
 (require 'setup-prolog)
@@ -195,3 +195,4 @@
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
+
