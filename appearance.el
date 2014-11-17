@@ -29,7 +29,8 @@
   ; legacy content that fails to declare its encoding.
   ; DejaVu Sans Mono for mathematical symbol
   (set-fontset-font "fontset-default"
-                    '(#x2190 . #x22ff)
+                    ;'(#x2190 . #x22ff)
+                    '(#x2020 . #x22ff)
                     (font-spec :family "DejaVu Sans Mono"))
   (setq face-font-rescale-alist '((".*DejaVu.Sans.Mono.*" . 0.9))))
 
