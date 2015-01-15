@@ -90,6 +90,10 @@
    ;; New scala major mode for emacs 24. It is a complete rewrite
    ;; based on the Scala Language Specification 2.9.
    (cons 'scala-mode2 melpa)
+   ;; https://github.com/hvesalai/sbt-mode
+   ;; An emacs mode for interacting with sbt, scala console (aka REPL)
+   ;; and sbt projects.
+   (cons 'sbt-mode melpa)
    ;; http://www.nongnu.org/geiser
    ;; Geiser is a collection of Emacs major and minor modes that
    ;; conspire with one or more Scheme interpreters to keep the Lisp
@@ -195,4 +199,3 @@
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
-
