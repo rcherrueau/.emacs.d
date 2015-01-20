@@ -99,12 +99,6 @@
    ;; conspire with one or more Scheme interpreters to keep the Lisp
    ;; Machine Spirit alive. Use for racket!
    (cons 'geiser marmalade)
-   ;; https://github.com/alpaker/Fill-Column-Indicator
-   ;; Many modern editors and IDEs can graphically indicate the
-   ;; location of the fill column by drawing a thin line (in design
-   ;; parlance, a `rule') down the length of the editing window.
-   ;; Fill-column-indicator implements this facility in Emacs.
-   (cons 'fill-column-indicator marmalade)
    ;; https://github.com/haskell/haskell-mode
    ;; A major mode for editing Haskell (the functional programming
    ;; language, see URL `http://www.haskell.org') in Emacs.
@@ -118,6 +112,15 @@
    ;; an abbreviation and automatically expand it into function
    ;; templates.
    (cons 'yasnippet melpa)
+   ;; Show FIXME/TODO/BUG(...) in special face only in comments and
+   ;; strings
+   (cons 'fic-ext-mode marmalade)
+   ;; https://github.com/alpaker/Fill-Column-Indicator
+   ;; Many modern editors and IDEs can graphically indicate the
+   ;; location of the fill column by drawing a thin line (in design
+   ;; parlance, a `rule') down the length of the editing window.
+   ;; Fill-column-indicator implements this facility in Emacs.
+   (cons 'fill-column-indicator marmalade)
    ;; https://github.com/jorgenschaefer/circe Circe is a Client for
    ;; IRC in Emacs. It integrates well with the rest of the editor,
    ;; using standard Emacs key bindings and indicating activity in
@@ -157,12 +160,13 @@
 (require 'setup-ffip)
 (require 'setup-html-mode)
 (require 'setup-scala)
-(require 'setup-circe)
 (require 'setup-geiser)
 (require 'setup-prolog)
 (require 'setup-haskell)
 (require 'setup-java)
 (require 'setup-yasnippet)
+(require 'setup-fic-ext-mode)
+(require 'setup-circe)
 
 ;; Map files to modes
 (require 'mode-mappings)
