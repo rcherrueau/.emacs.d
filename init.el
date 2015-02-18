@@ -112,9 +112,6 @@
    ;; an abbreviation and automatically expand it into function
    ;; templates.
    (cons 'yasnippet melpa)
-   ;; Show FIXME/TODO/BUG(...) in special face only in comments and
-   ;; strings
-   (cons 'fic-ext-mode marmalade)
    ;; https://github.com/alpaker/Fill-Column-Indicator
    ;; Many modern editors and IDEs can graphically indicate the
    ;; location of the fill column by drawing a thin line (in design
@@ -165,7 +162,6 @@
 (require 'setup-haskell)
 (require 'setup-java)
 (require 'setup-yasnippet)
-(require 'setup-fic-ext-mode)
 (require 'setup-circe)
 
 ;; Map files to modes

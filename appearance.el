@@ -50,5 +50,13 @@
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
 
+;; Highlight the following words in comments
+(defun add-watchwords ()
+  (font-lock-add-keywords
+   nil '(("\\<\\(TODO\\|FIXME\\|HACK\\|XXX\\|BUG\\):"
+          1 font-lock-warning-face t))))
+
+(add-hook 'prog-mode-hook #'add-watchwords)
+
 ;; end of apparance.el
 (provide 'appearance)
