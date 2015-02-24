@@ -58,5 +58,9 @@
 
 (add-hook 'prog-mode-hook #'add-watchwords)
 
+;; Transparent Emacs
+(set-frame-parameter (selected-frame) 'alpha '(97 97))
+(add-to-list 'default-frame-alist '(alpha 97 97))
+
 ;; end of apparance.el
 (provide 'appearance)
