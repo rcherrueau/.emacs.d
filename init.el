@@ -46,11 +46,6 @@
    ;; https://github.com/magnars/dash.el
    ;; A modern list library for Emacs.
    (cons 'dash melpa)
-   ;; https://github.com/defunkt/gist.el
-   ;; Yet another Emacs paste mode, this one for Gist. Contribute to
-   ;; gist.el development by creating an account on GitHub.
-   ;; Gist is a simple way to share snippets and pastes with others
-   (cons 'gist melpa)
    ;; http://www.emacswiki.org/emacs/UndoTree
    ;; More advanced yet simpler undo system inspired by Vim
    (cons 'undo-tree melpa)
