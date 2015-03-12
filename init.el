@@ -98,6 +98,11 @@
    ;; A major mode for editing Haskell (the functional programming
    ;; language, see URL `http://www.haskell.org') in Emacs.
    (cons 'haskell-mode marmalade)
+   ;; https://github.com/ocaml/tuareg
+   ;; Help in Editing OCaml code, to highlight important parts of the
+   ;; code, to run an OCaml toplevel, and to run the OCaml debugger
+   ;; within Emacs.
+   (cons 'tuareg melpa)
    ;; https://github.com/ejmr/php-mode
    ;; updates PHP Mode with features to make it more friendly to use
    ;; with PHP 5.4 and later.
