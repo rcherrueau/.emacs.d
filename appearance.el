@@ -53,7 +53,7 @@
 ;; Highlight the following words in comments
 (defun add-watchwords ()
   (font-lock-add-keywords
-   nil '(("\\<\\(TODO\\|FIXME\\|HACK\\|XXX\\|BUG\\):"
+   nil '(("\\<\\(TODO\\|FIXME\\|HACK\\|XXX\\|BUG\\|Note\\):"
           1 font-lock-warning-face t))))
 
 (add-hook 'prog-mode-hook #'add-watchwords)
