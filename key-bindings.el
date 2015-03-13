@@ -252,6 +252,7 @@
 ;; Insert λ on M-\
 (global-set-key (kbd "M-\\") "λ")
 (global-set-key (kbd "M-∏") "Π") ;; ∏ is alt + shif + p
+(global-set-key (kbd "M-Œ") "∘") ;; Œ is alt + shit + o
 
 
 ;; When not is mac but using mac-keyborad:
