@@ -46,11 +46,6 @@
    ;; https://github.com/magnars/dash.el
    ;; A modern list library for Emacs.
    (cons 'dash melpa)
-   ;; https://github.com/defunkt/gist.el
-   ;; Yet another Emacs paste mode, this one for Gist. Contribute to
-   ;; gist.el development by creating an account on GitHub.
-   ;; Gist is a simple way to share snippets and pastes with others
-   (cons 'gist melpa)
    ;; http://www.emacswiki.org/emacs/UndoTree
    ;; More advanced yet simpler undo system inspired by Vim
    (cons 'undo-tree melpa)
@@ -103,6 +98,11 @@
    ;; A major mode for editing Haskell (the functional programming
    ;; language, see URL `http://www.haskell.org') in Emacs.
    (cons 'haskell-mode marmalade)
+   ;; https://github.com/ocaml/tuareg
+   ;; Help in Editing OCaml code, to highlight important parts of the
+   ;; code, to run an OCaml toplevel, and to run the OCaml debugger
+   ;; within Emacs.
+   (cons 'tuareg melpa)
    ;; https://github.com/ejmr/php-mode
    ;; updates PHP Mode with features to make it more friendly to use
    ;; with PHP 5.4 and later.
@@ -112,12 +112,6 @@
    ;; an abbreviation and automatically expand it into function
    ;; templates.
    (cons 'yasnippet melpa)
-   ;; https://github.com/alpaker/Fill-Column-Indicator
-   ;; Many modern editors and IDEs can graphically indicate the
-   ;; location of the fill column by drawing a thin line (in design
-   ;; parlance, a `rule') down the length of the editing window.
-   ;; Fill-column-indicator implements this facility in Emacs.
-   (cons 'fill-column-indicator marmalade)
    ;; https://github.com/jorgenschaefer/circe Circe is a Client for
    ;; IRC in Emacs. It integrates well with the rest of the editor,
    ;; using standard Emacs key bindings and indicating activity in
