@@ -249,11 +249,11 @@
 ;; Emulation of the vi % command
 (global-set-key (kbd "C-ù") 'forward-or-backward-sexp)
 
-;; Insert λ on M-\
+;; Insert special char
 (global-set-key (kbd "M-\\") "λ")
 (global-set-key (kbd "M-∏") "Π") ;; ∏ is alt + shif + p
 (global-set-key (kbd "M-Œ") "∘") ;; Œ is alt + shit + o
-
+(global-set-key (kbd "M-∑") "σ") ;; ∑ is alt + shit + s
 
 ;; When not is mac but using mac-keyborad:
 ;; - set Alt-key to Super-key
